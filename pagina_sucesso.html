@@ -47,30 +47,48 @@
 
     <hr class="hr" />
 
-    <div class="card-footer">
+    <footer class="card-footer">
       <p>Fique por dentro das novidades</p>
-      <div class="social-icons">
-        <span>
-          <img src="./Instagram_Glyph_Gradient 1.png" />
-        </span>
-        <span>
-          <img src="./LI-In-Bug 1.png" />
-        </span>
-        <span class="divider">
-          Baixe nosso Aplicativo
-        </span>
-        <span>
-          <img src="./GetItOnGooglePlay_Badge_Web_color_Portuguese-Brazil 1.png" />
-        </span>
-        <span>
-          <img src="./Download_on_the_App_Store_Badge_PTBR_RGB_blk_092917 1.png" />
-        </span>
+
+      <!-- Seção de redes sociais e aplicativos -->
+      <div class="social-app-container">
+        <!-- Seção de redes sociais -->
+        <nav class="social-icons">
+          <ul>
+            <li>
+              <a href="#" aria-label="Instagram">
+                <img src="./Instagram_Glyph_Gradient 1.png" alt="Ícone do Instagram"/>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Linkedin">
+                <img src="./LI-In-Bug 1.png" alt="Ícone do Linkedin"/>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Seção de aplicativos -->
+        <div class="app-download">
+          <span class="divider">Baixe nosso Aplicativo</span>
+          <div>
+            <a href="#" aria-label="Baixar na Google Play">
+              <img src="./GetItOnGooglePlay_Badge_Web_color_Portuguese-Brazil 1.png" alt="Disponível no Google Play" />
+            </a>
+          </div>
+          <div style="padding-left: 16px;">
+            <a href="#" aria-label="Baixar na Play Store">
+              <img src="./Download_on_the_App_Store_Badge_PTBR_RGB_blk_092917 1.png" alt="Disponível na Play Store" />
+            </a>
+          </div>
+        </div>
       </div>
 
+      <!-- Seção de copyright -->
       <div class="copyright">
         <small>Copyright <span style="color: #76C96E;">&#169;</span> 2025 VÓLUS Instituição de Pagamento LTDA</small>
       </div>
-    </div>
+    </footer>
   </div>
 </body>
 <style>
@@ -80,6 +98,8 @@
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
   }
 
   body {
@@ -90,6 +110,12 @@
   hr {
     border: 1px solid #76C96E33;
     margin: 40px 0;
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    gap: 16px;
   }
 
   .card .card-header {
@@ -129,13 +155,28 @@
     color: #76C96E;
   }
 
+  .card-footer .social-app-container{
+    display: flex;
+    align-items: center;
+  }
+
+  .card-footer .app-download {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-footer .social-app-container {
+    display: flex;
+    gap: 16px;
+  }
+
   .card .card-footer .social-icons {
     display: flex;
     gap: 16px;
   }
 
   .card .card-footer .copyright {
-    padding: 32px 0;
+    padding: 16px 0;
     font-size: 12px;
   }
   
