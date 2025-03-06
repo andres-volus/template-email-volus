@@ -9,15 +9,11 @@
 <body>
     <div class="card">
       <div class="card-header">
-        <img src="https://volus.com.br/wp-content/uploads/2022/04/Ativo-1-1024x592.png"/>
-        <label class="card-title">Verificação de E-mail concluida com sucesso</label>
+        <img src="./LOGO 1.svg" alt="logo-volus"/>
+        <span class="card-title">Verificação de E-mail concluida com sucesso</span>
         <div class="icon-success">
-          <i class="fa-regular fa-envelope"></i>
-          <span>
-            <i class="fa fa-clock"></i>
-          </span>
+          <img src="./EnvelopeSimple.svg" alt="icone-envelope-sucesso"/>
         </div>
-        
         <div class="user-info">
           <div class="user-message">
             <p>Olá, <strong>{ User }</strong></p>
@@ -26,13 +22,13 @@
           <div class="user-data">
             <p>
               <i class="fa-regular fa-user"></i>
-              <label>Nome:</label>
-              <label>000123 - 000123</label>
+              <span>Nome:</span>
+              <span>000123 - 000123</span>
             </p>
             <p style="margin: 0;">
               <i class="fa-regular fa-at"></i>
-              <label>E-mail:</label>
-              <label>andres@volus.com</label>
+              <span>E-mail:</span>
+              <span>andres@volus.com</span>
             </p>
           </div>
         </div>
@@ -75,6 +71,7 @@
 
   .card .card-header .card-title {
     font-size: 31px;
+    padding-top: 32px;
   }
 
   .card .card-header .icon-success {
@@ -103,6 +100,12 @@
   hr {
     border: 1px solid #76C96E33;
     margin: 40px 0;
+  }
+
+  @media screen and (max-width: 400px) {
+    body {
+      padding: 15px;
+    }
   }
 </style>
 </html>
