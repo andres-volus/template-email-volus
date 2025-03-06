@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="card">
+      <div class="card-header">
+        <img src="https://volus.com.br/wp-content/uploads/2022/04/Ativo-1-1024x592.png"/>
+        <label class="card-title">Verificação de E-mail concluida com sucesso</label>
+        <div class="icon-success">
+          <i class="fa-regular fa-envelope"></i>
+          <span>
+            <i class="fa fa-clock"></i>
+          </span>
+        </div>
+        
+        <div class="user-info">
+          <div class="user-message">
+            <p>Olá, <strong>{ User }</strong></p>
+            <p>Seu e-mail { email } foi alterado/cadastrado com sucesso!</p>
+          </div>
+          <div class="user-data">
+            <p>
+              <i class="fa-regular fa-user"></i>
+              <label>Nome:</label>
+              <label>000123 - 000123</label>
+            </p>
+            <p>
+              <i class="fa-regular fa-at"></i>
+              <label>E-mail:</label>
+              <label>andres@volus.com</label>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr" />
+    </div>
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+  * {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 32px 80px;
+  }
+
+  .card .card-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .card-header img {
+    width: 158px;
+  }
+
+  .card .card-header .card-title {
+    font-size: 31px;
+  }
+
+  .card .card-header .icon-success {
+    position: relative;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .card .card-header .icon-success i {
+    font-size: 140px;
+  }
+
+  .card .card-header .icon-success span i {
+    position: absolute;
+    font-size: 56px;
+    bottom: 20%;
+    right: 40%;
+    color: #E3BF36;
+  }
+  
+  .card .card-header .user-info i{
+    color: #76C96E;
+  }
+
+  hr {
+    border: 1px solid #76C96E33;
+    margin: 40px 0;
+  }
+</style>
+</html>
