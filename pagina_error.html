@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volus | Verificação de Email</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  </head>
+<body>
+  <div class="card">
+    
+    <!-- Header -->
+    <header class="card-header">
+      <img src="./Logo_Volus.svg" alt="Logo da Volus"/>
+
+      <h1 class="card-title">Falha na verificação de E-mail</h1>
+
+      <figure class="icon-success">
+        <img src="./Envelope_Error--dark.svg" alt="Ícone de envelope indicando sucesso"/>
+      </figure>
+
+      <!-- Seção de informações da validação do email -->
+      <section class="message-validation">
+        <!-- Erro genérico -->
+        <p style="margin: 0;">
+          Ocorreu um  erro ao realizar a validação do e-mail. Tente novamente mais tarde.
+        </p>
+
+        <!-- Erro de código expirado -->
+        <!-- <p style="margin: 0;">
+          O código de validação que você tentou usar já expirou ou foi utilizado anteriormente. 
+          Por favor, solicite um novo código de validação, se necessário.
+        </p> -->
+      </section>
+
+    </header>
+
+    <!-- Divider -->
+    <hr class="hr" />
+
+    <!-- Body -->
+    <div class="card-body">
+
+      <!-- Seção de informações de suporte -->
+      <section aria-labelledby="support-info">
+        <p>Caso não tenha feito essa solicitação entre em contato com nossa central de atendimento</p>
+        <p>
+          <i class="fa fa-phone"></i>
+          <span>0800 707 7227</span>
+        </p>
+      </section>
+    </div>
+
+    <!-- Divider -->
+    <hr class="hr" />
+
+    <!-- Footer -->
+    <footer class="card-footer">
+      <p>Fique por dentro das novidades</p>
+
+      <!-- Seção de redes sociais e aplicativos -->
+      <div class="social-app-container">
+
+        <!-- Seção de redes sociais -->
+        <nav class="social-icons">
+          <ul>
+            <li>
+              <a href="#" aria-label="Instagram">
+                <img src="./Instagram_Icon.png" alt="Ícone do Instagram"/>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Linkedin">
+                <img src="./Linkedin_Icon.png" alt="Ícone do Linkedin"/>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Seção de aplicativos -->
+        <div class="app-download">
+          <span class="divider">Baixe nosso Aplicativo</span>
+          <figure>
+            <a href="#" aria-label="Baixar na Google Play">
+              <img src="./Botao_Download_Google_Play.png" alt="Disponível no Google Play" />
+            </a>
+          </figure>
+          <figure>
+            <a href="#" aria-label="Baixar na Play Store">
+              <img src="./Botao_Download_App_Store.png" alt="Disponível na Play Store" />
+            </a>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Seção de copyright -->
+      <div class="copyright">
+        <small>Copyright <span style="color: #76C96E;">&#169;</span> 2025 VÓLUS Instituição de Pagamento LTDA</small>
+      </div>
+    </footer>
+  </div>
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+  * {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body {
+    padding: 2rem 5rem;
+    min-width: 800px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #333333;
+    color: #f6f6f6;
+  }
+
+  
+  hr {
+    border: 1px solid #76C96E33;
+    margin: 40px 0;
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    gap: 16px;
+  }
+
+  figure {
+    margin: 0;
+    padding-right: 16px;
+  }
+
+  /* Card Header */
+  .card .card-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .card-header img {
+    width: 158px;
+  }
+
+  .card .card-header .card-title {
+    font-size: 31px;
+    padding-top: 32px;
+  }
+
+  .card .card-header .icon-success {
+    position: relative;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .card .card-header .icon-success i {
+    font-size: 140px;
+  }
+  
+  /* Ícones verdes */
+  .card .card-header .user-info i,
+  .card .card-body i {
+    color: #76C96E;
+  }
+
+  /* Footer */
+  .card-footer .social-app-container{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+
+  /* Baixar Aplicativo */
+  .card-footer .app-download {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Ícones de Redes Sociais */
+  .card-footer .social-app-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  .card .card-footer .social-icons {
+    display: flex;
+    gap: 16px;
+  }
+
+  /* Direitos Autorais */
+  .card .card-footer .copyright {
+    padding: 16px 0;
+    font-size: 12px;
+  }
+  
+  /* Linha divisória */
+  .divider {
+    padding: 12px 16px;
+    border-left: 2px solid #76C96E33;
+  }
+
+  /* Resposividade de telas menores */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 15px;
+      margin: 0;
+      max-width: 100%;
+      min-width: unset;
+    }
+  }
+</style>
+</html>
