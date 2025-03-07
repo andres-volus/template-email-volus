@@ -9,18 +9,24 @@
   </head>
 <body>
   <div class="card">
-    <div class="card-header">
-      <img src="./LOGO 1.svg" alt="logo-volus"/>
-      <span class="card-title">Verificação de E-mail concluida com sucesso</span>
-      <div class="icon-success">
-        <img src="./EnvelopeSimple.svg" alt="icone-envelope-sucesso"/>
-      </div>
-      <div class="user-info">
-        <div class="user-message">
+    <!-- Header -->
+    <header class="card-header">
+      <img src="./LOGO 1.svg" alt="Logo da Volus"/>
+
+      <h1 class="card-title">Verificação de E-mail concluida com sucesso</h1>
+
+      <figure class="icon-success">
+        <img src="./EnvelopeSimple.svg" alt="Ícone de envelope indicando sucesso"/>
+      </figure>
+
+      <!-- Seção de informações do usuário -->
+      <section class="user-info">
+        <article class="user-message">
           <p>Olá, <strong>{ User }</strong></p>
           <p>Seu e-mail { email } foi alterado/cadastrado com sucesso!</p>
-        </div>
-        <div class="user-data">
+        </article>
+
+        <article class="user-data">
           <p>
             <i class="fa-regular fa-user"></i>
             <span>Nome:</span>
@@ -31,13 +37,16 @@
             <span>E-mail:</span>
             <span>andres@volus.com</span>
           </p>
-        </div>
-      </div>
-    </div>
+        </article>
+
+      </section>
+    </header>
 
     <hr class="hr" />
 
+    <!-- Body -->
     <div class="card-body">
+      <!-- Seção de informações de suporte -->
       <section aria-labelledby="support-info">
         <p>Caso não tenha feito essa solicitação entre em contato com nossa central de atendimento</p>
         <p>
@@ -55,6 +64,7 @@
 
       <!-- Seção de redes sociais e aplicativos -->
       <div class="social-app-container">
+
         <!-- Seção de redes sociais -->
         <nav class="social-icons">
           <ul>
@@ -74,16 +84,16 @@
         <!-- Seção de aplicativos -->
         <div class="app-download">
           <span class="divider">Baixe nosso Aplicativo</span>
-          <div>
+          <figure>
             <a href="#" aria-label="Baixar na Google Play">
               <img src="./GetItOnGooglePlay_Badge_Web_color_Portuguese-Brazil 1.png" alt="Disponível no Google Play" />
             </a>
-          </div>
-          <div style="padding-left: 16px;">
+          </figure>
+          <figure>
             <a href="#" aria-label="Baixar na Play Store">
               <img src="./Download_on_the_App_Store_Badge_PTBR_RGB_blk_092917 1.png" alt="Disponível na Play Store" />
             </a>
-          </div>
+          </figure>
         </div>
       </div>
 
@@ -122,6 +132,11 @@
     padding: 0;
     display: flex;
     gap: 16px;
+  }
+
+  figure {
+    margin: 0;
+    padding-right: 16px;
   }
 
   .card .card-header {
@@ -194,6 +209,9 @@
   @media screen and (max-width: 400px) {
     body {
       padding: 15px;
+      margin: 0;
+      max-width: 100%;
+      min-width: unset;
     }
   }
 </style>
