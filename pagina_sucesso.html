@@ -120,7 +120,7 @@
   }
 
   body {
-    padding: 32px 80px;
+    padding: 2rem 5rem;
     min-width: 800px;
     max-width: 800px;
     margin: 0 auto;
@@ -145,6 +145,7 @@
     padding-right: 16px;
   }
 
+  /* Card Header */
   .card .card-header {
     display: flex;
     flex-direction: column;
@@ -168,30 +169,27 @@
   .card .card-header .icon-success i {
     font-size: 140px;
   }
-
-  .card .card-header .icon-success span i {
-    position: absolute;
-    font-size: 56px;
-    bottom: 20%;
-    right: 40%;
-    color: #E3BF36;
-  }
   
+  /* Ícones verdes */
   .card .card-header .user-info i,
   .card .card-body i {
     color: #76C96E;
   }
 
+  /* Footer */
   .card-footer .social-app-container{
     display: flex;
     align-items: center;
+    /* flex-wrap: wrap; */
   }
 
+  /* Baixar Aplicativo */
   .card-footer .app-download {
     display: flex;
     align-items: center;
   }
 
+  /* Ícones de Redes Sociais */
   .card-footer .social-app-container {
     display: flex;
     gap: 16px;
@@ -202,17 +200,20 @@
     gap: 16px;
   }
 
+  /* Direitos Autorais */
   .card .card-footer .copyright {
     padding: 16px 0;
     font-size: 12px;
   }
   
+  /* Linha divisória */
   .divider {
     padding: 12px 16px;
     border-left: 2px solid #76C96E33;
   }
 
-  @media screen and (max-width: 400px) {
+  /* Resposividade de telas menores */
+  @media screen and (max-width: 768px) {
     body {
       padding: 15px;
       margin: 0;
